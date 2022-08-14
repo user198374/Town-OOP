@@ -1,3 +1,6 @@
+from time import time
+
+
 class Personne:
     def __init__(self, name, last_name, eyes, hair, account):
        self.name = name
