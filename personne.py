@@ -25,4 +25,13 @@ class Criminal(Personne):
         super().__init__(name, last_name, eyes, hair, account)
     
     def steal(self):
-        pass
+        pass #le criminel peut choisir quand il veut partir
+    
+class Cops(Personne):
+    def __init__(self, name, last_name, eyes, hair, account):
+        super().__init__(name, last_name, eyes, hair, account)
+    
+    def arrival(self):
+        pass #ici je voudrais un timer de 30 seconde avant de lancer l'arrestation n\
+            #du criminel, par contre si la police arrive avant il ne pourra pas s'échapper et sera arrêté 
+        
