@@ -1,3 +1,5 @@
+from personne import Cops
+
 class Building:
     def __init__(self, adress, floors):
         self.adress = adress
@@ -16,7 +18,10 @@ class Banque(Building):
         self.BIC = BIC
         self.representative = representative
         print("La banque", name, "situé à", adress, "possède", floors, " étages . Son BIC est",BIC, " et son représentant est", representative)
-        
+    
+    def call_the_cops(self):
+        Cops.arrival()            
+              
 class Maison(Building):
     def __init__(self, adress, floors, family_name, occupant):
         super().__init__(adress, floors)
